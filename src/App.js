@@ -1,8 +1,7 @@
 import { useState } from 'react';
 import './App.css';
-import { BiSun, BiMoon } from "react-icons/bi";
+import { BiSun } from "react-icons/bi";
 import { BsMoon } from "react-icons/bs";
-import { SiLinkedin } from "react-icons/si";
 import { FaGithubSquare, FaFacebookSquare, FaLinkedin, FaStackOverflow } from "react-icons/fa";
 import { Col, Container, Row } from 'react-bootstrap';
 import portfolioImg from './images/portfolio_img.png';
@@ -11,19 +10,12 @@ import project2 from './images/project2.png';
 import project3 from './images/project3.png';
 import project4 from './images/project4.png';
 import project5 from './images/project5.png';
-import webApp from './images/web-app.png';
-import mobileApp from './images/mobile-app.png';
-import web2 from './images/web2.webp';
-import web3 from './images/web_development.webp';
+import web2 from './images/web2.png';
 import mobile2 from './images/mobile2.jpg';
 import redux from './images/redux.png';
 import bootstrap from './images/bootstrap.png';
 import materialui from './images/materialui.png';
 import firebase from './images/firebase.png';
-import monogodb from './images/mongodb.png';
-import flutter from './images/flutter.png';
-import nodejs from './images/nodejs.png';
-import github from './images/github.png';
 
 function App() {
   const [darkMode, setDarkMode] = useState(true);
@@ -635,10 +627,7 @@ function App() {
           </Row>
         </Container>
       </footer>
-
-
-
-    </Container >
+    </Container>
   );
 }
 
