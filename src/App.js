@@ -1,21 +1,20 @@
 import { useState } from 'react';
 import './App.css';
-import { BiSun } from "react-icons/bi";
+import { BiSun, BiMobileAlt } from "react-icons/bi";
 import { BsMoon } from "react-icons/bs";
-import { FaGithubSquare, FaFacebookSquare, FaLinkedin, FaStackOverflow } from "react-icons/fa";
+import { FaGithubSquare, FaFacebookSquare, FaLinkedin, FaStackOverflow, FaDesktop } from "react-icons/fa";
 import { Col, Container, Row } from 'react-bootstrap';
-import portfolioImg from './images/portfolio_img.png';
 import project1 from './images/project1.png';
 import project2 from './images/project2.png';
 import project3 from './images/project3.png';
 import project4 from './images/project4.png';
 import project5 from './images/project5.png';
-import web2 from './images/web2.png';
-import mobile2 from './images/mobile2.jpg';
 import redux from './images/redux.png';
 import bootstrap from './images/bootstrap.png';
 import materialui from './images/materialui.png';
 import firebase from './images/firebase.png';
+import irblack from './images/irblack.png';
+import irwhite from './images/irwhite.png';
 
 function App() {
   const [darkMode, setDarkMode] = useState(true);
@@ -56,11 +55,9 @@ function App() {
           </div>
 
           <div className="menu-btn-container" onClick={() => setMobileMenu(!mobileMenu)}>
-            {/* <button> */}
-            <span className={`menu-line ${darkMode ? 'menu-line-dark' : 'menu-line-light'}`}></span>
-            <span className={`menu-line ${darkMode ? 'menu-line-dark' : 'menu-line-light'}`}></span>
-            <span className={`menu-line ${darkMode ? 'menu-line-dark' : 'menu-line-light'}`}></span>
-            {/* </button> */}
+            <span className={`menu-line ${darkMode ? 'menu-line-dark' : 'menu-line-light'} ${mobileMenu && "hamburger-first-child"}`}></span>
+            <span className={`menu-line ${darkMode ? 'menu-line-dark' : 'menu-line-light'} ${mobileMenu && "middle-hamburger-hide"}`}></span>
+            <span className={`menu-line ${darkMode ? 'menu-line-dark' : 'menu-line-light'} ${mobileMenu && "hamburger-last-child"}`}></span>
           </div>
         </div>
       </header>
@@ -84,7 +81,8 @@ function App() {
             <Col lg={6} md={6} sm={12}>
               <div className="portfolio-intro">
                 <h3>Hi there, I'm Saleheen. 👋</h3>
-                <h1>Full Stack MERN / Flutter <br /> Developer</h1>
+                {/* <h1>Full Stack MERN / Flutter <br /> Developer</h1> */}
+                <h1>React JavaScript Developer</h1>
                 <div className='social-links'>
                   <a href='https://www.linkedin.com/in/saleheen-noor/' target='_blank' rel='noreferrer'><FaLinkedin /></a>
                   <a href='https://github.com/STECHNO' target='_blank' rel='noreferrer'><FaGithubSquare /></a>
@@ -95,7 +93,7 @@ function App() {
             </Col>
             <Col lg={6} md={6} sm={12}>
               <div className="portfolio-image">
-                <img src={portfolioImg} alt="Portfolio" />
+                <img src={`${darkMode ? irblack : irwhite}`} alt="Portfolio" />
               </div>
             </Col>
           </Row>
@@ -108,7 +106,7 @@ function App() {
             <Col lg={12} md={12} sm={12}>
               <div className={`${darkMode ? 'portfolio-headings-dark' : 'portfolio-headings-light'}`}>
                 <h2>Projects</h2>
-                <p>Glimpse of few projects i have worked in (Apps, Websites)</p>
+                <p>Glimpse of few projects I have worked On (Apps, Websites).</p>
               </div>
             </Col>
           </Row>
@@ -217,7 +215,7 @@ function App() {
             <Col lg={12} md={12} sm={12}>
               <div className={`${darkMode ? 'portfolio-headings-dark' : 'portfolio-headings-light'}`}>
                 <h2>Services</h2>
-                <p>For those who know what they’re looking for</p>
+                {/* <p>For those who know what they’re looking for</p> */}
               </div>
             </Col>
           </Row>
@@ -225,7 +223,7 @@ function App() {
             <Col lg={6} md={6} sm={12}>
               <div className="services">
                 <div>
-                  <img src={web2} alt="Web Application" />
+                  <FaDesktop/>
                 </div>
                 <h3>Web Application</h3>
                 <p>Front-end development</p>
@@ -237,7 +235,7 @@ function App() {
             <Col lg={6} md={6} sm={12}>
               <div className="services res-mt">
                 <div>
-                  <img src={mobile2} alt="Mobile Application" />
+                  <BiMobileAlt />
                 </div>
                 <h3>Mobile Application</h3>
                 <p>Responsive</p>
@@ -263,6 +261,7 @@ function App() {
             <Col lg={12} md={12} sm={12}>
               <div className={`${darkMode ? 'portfolio-headings-dark' : 'portfolio-headings-light'}`}>
                 <h2>Skills</h2>
+                <p>For those who know what they’re looking for..</p>
               </div>
             </Col>
           </Row>
@@ -603,7 +602,7 @@ function App() {
               <div className="want-to-hire-me">
                 <h2>In need of a Web/Mobile developer?</h2>
                 <p><div className="availability-status"></div> I'm currently available for freelance work.</p>
-                <button onClick={() => window.location.href = 'mailto:saleheen.noor@gmail.com'}>Send a message</button>
+                <button onClick={() => window.location.href = 'mailto:info@saleheennoor.com'}>Send a message</button>
               </div>
             </Col>
             <Col lg={6} md={12} sm={12}>

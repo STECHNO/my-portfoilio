@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;800&display=swap");
+
 * {
   font-family: "Nunito Sans", sans-serif !important;
 }
@@ -7,11 +8,6 @@ body {
   position: relative;
   top: 5rem;
 }
-
-/* a{
-  text-decoration: none !important;
-  color: inherit !important;
-} */
 
 .dark-mode {
   background-color: #000000;
@@ -163,6 +159,17 @@ body {
   outline: none;
 }
 
+.menu-line {
+  display: inline-block;
+  position: relative;
+  width: 100%;
+  height: 2px;
+  border-radius: 2px;
+  background: currentColor;
+  left: 0;
+  transition: all 0.25s ease-in;
+}
+
 .menu-line-dark {
   background-color: #ffffff !important;
 }
@@ -192,6 +199,12 @@ body {
   display: inherit;
 }
 
+@media screen and (min-width: 768px) and (max-width: 795px) {
+  .portfolio-nav ul li {
+    margin-right: 12px;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .nav-container {
     display: none;
@@ -204,10 +217,23 @@ body {
     align-items: center;
     justify-content: space-evenly;
   }
-}
 
-.b {
-  border: 1px solid red;
+  .middle-hamburger-hide {
+    display: none;
+    transform: scaleX(0);
+  }
+
+  .hamburger-first-child {
+    width: 25px !important;
+    transform: rotate(-45deg);
+    top: 8px !important;
+  }
+
+  .hamburger-last-child {
+    transform: rotate(45deg);
+    bottom: 10px !important;
+    width: 25px !important;
+  }
 }
 
 .row-m {
@@ -222,7 +248,7 @@ body {
   align-items: left;
   justify-content: center;
 }
-.portfolio-intro h1{
+.portfolio-intro h1 {
   margin-top: 4.5px;
 }
 
@@ -242,20 +268,26 @@ body {
 
 .portfolio-image {
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #fd8c22;
 }
 
 .portfolio-image img {
   width: 100%;
+  border-radius: 50% 50% 50% 50%;
 }
 
-.social-links{
+.social-links {
   height: 3.5rem;
   display: flex;
   flex-direction: row;
   align-items: center;
 }
 
-.social-links a{
+.social-links a {
   color: #ffffff;
 }
 
@@ -513,18 +545,18 @@ body {
   justify-content: center;
 }
 
-.services div:first-child {
+/* .services div:first-child {
   height: 120px;
   width: 120px;
   border-radius: 50%;
   overflow: hidden;
   margin-bottom: 2rem;
-}
+} */
 
-.services div:first-child img {
+/* .services div:first-child img {
   width: 100%;
   height: 100%;
-}
+} */
 
 .services h3 {
   margin-bottom: 2rem;
@@ -819,4 +851,10 @@ body {
   transition: width 0.5s;
   -webkit-transition: width 0.5s;
   -moz-transition: width 0.5s;
+}
+
+.services div svg {
+  font-size: 50px;
+  margin-bottom: 1rem;
+  color: #fd8c22;
 }
