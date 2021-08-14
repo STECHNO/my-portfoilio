@@ -244,8 +244,8 @@ body {
   }
   
   .toggle-btn {
-    width: 25px;
-    height: 25px;
+    width: 27px;
+    height: 27px;
     font-size: 18px;
   }
 }
@@ -262,6 +262,7 @@ body {
   align-items: left;
   justify-content: center;
 }
+
 .portfolio-intro h1 {
   margin-top: 4.5px;
 }
@@ -273,10 +274,15 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin-top: 1rem;
   }
 
   .portfolio-intro h1 {
     text-align: center;
+  }
+
+  .portfolio-image {
+    margin-top: 4.5rem;
   }
 }
 
@@ -301,8 +307,12 @@ body {
   align-items: center;
 }
 
-.social-links a {
+.social-links-a-dark {
   color: #ffffff;
+}
+
+.social-links-a-light {
+  color: #000000;
 }
 
 .social-links a svg {
@@ -746,6 +756,10 @@ body {
     text-align: center;
     padding-top: 5rem;
   }
+
+  .mobile-nav {
+    display: block !important;
+  }
 }
 
 .call-me p {
@@ -786,6 +800,7 @@ body {
   left: 0;
   z-index: 9999;
   margin-top: 5rem;
+  display: none;
 }
 
 .mobile-menu-wrapper {
@@ -870,6 +885,14 @@ body {
   transition: width 0.5s;
   -webkit-transition: width 0.5s;
   -moz-transition: width 0.5s;
+}
+
+.mobile-nav img{
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  margin-left: -30% !important;
+  opacity: 0.2;
 }
 
 .services div svg {

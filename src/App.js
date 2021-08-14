@@ -15,6 +15,7 @@ import materialui from './images/materialui.png';
 import firebase from './images/firebase.png';
 import irblack from './images/irblack.png';
 import irwhite from './images/irwhite.png';
+import ironmanHalf from './images/ironman-half.jpg';
 
 function App() {
   const [darkMode, setDarkMode] = useState(true);
@@ -63,7 +64,7 @@ function App() {
       </header>
 
       {mobileMenu && (
-        <div className={`mobile-nav ${darkMode ? 'mobile-nav-dark' : 'mobile-nav-light'}`}>
+        <div className={`mobile-nav b ${darkMode ? 'mobile-nav-dark' : 'mobile-nav-light'}`}>
           <div className='mobile-menu-wrapper'>
             <a onClick={() => setMobileMenu(false)} href="#home" className='animate-link' noreferrer>Home</a>
             <a onClick={() => setMobileMenu(false)} href="#services" className='animate-link' noreferrer>Services</a>
@@ -72,6 +73,7 @@ function App() {
             <a onClick={() => setMobileMenu(false)} href="#contact" className='animate-link' noreferrer>Contact</a>
             <button onClick={() => window.location.href = 'mailto:saleheen.noor@gmail.com'}>Send a message</button>
           </div>
+          <img src={ironmanHalf} alt="iron man"/>
         </div>
       )}
 
@@ -84,10 +86,10 @@ function App() {
                 {/* <h1>Full Stack MERN / Flutter <br /> Developer</h1> */}
                 <h1>React JavaScript Developer</h1>
                 <div className='social-links'>
-                  <a href='https://www.linkedin.com/in/saleheen-noor/' target='_blank' rel='noreferrer'><FaLinkedin /></a>
-                  <a href='https://github.com/STECHNO' target='_blank' rel='noreferrer'><FaGithubSquare /></a>
-                  <a href='https://www.facebook.com/saleheen.noor' target='_blank' rel='noreferrer'><FaFacebookSquare /></a>
-                  <a href='https://stackoverflow.com/users/6567203/saleheen-noor' target='_blank' rel='noreferrer'><FaStackOverflow /></a>
+                  <a className={`${darkMode ? 'social-links-a-dark' : 'social-links-a-light'}`} href='https://www.linkedin.com/in/saleheen-noor/' target='_blank' rel='noreferrer'><FaLinkedin /></a>
+                  <a className={`${darkMode ? 'social-links-a-dark' : 'social-links-a-light'}`} href='https://github.com/STECHNO' target='_blank' rel='noreferrer'><FaGithubSquare /></a>
+                  <a className={`${darkMode ? 'social-links-a-dark' : 'social-links-a-light'}`} href='https://www.facebook.com/saleheen.noor' target='_blank' rel='noreferrer'><FaFacebookSquare /></a>
+                  <a className={`${darkMode ? 'social-links-a-dark' : 'social-links-a-light'}`} href='https://stackoverflow.com/users/6567203/saleheen-noor' target='_blank' rel='noreferrer'><FaStackOverflow /></a>
                 </div>
               </div>
             </Col>
@@ -102,7 +104,7 @@ function App() {
 
       <section id='projects'>
         <Container>
-          <Row className='row-m'>
+          <Row className=''>
             <Col lg={12} md={12} sm={12}>
               <div className={`${darkMode ? 'portfolio-headings-dark' : 'portfolio-headings-light'}`}>
                 <h2>Projects</h2>
