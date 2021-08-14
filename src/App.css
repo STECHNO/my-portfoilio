@@ -206,6 +206,10 @@ body {
 }
 
 @media screen and (max-width: 768px) {
+  .portfolio-header-dark, .portfolio-header-light {
+    padding: 0 2rem;
+  }
+  
   .nav-container {
     display: none;
   }
@@ -233,6 +237,16 @@ body {
     transform: rotate(45deg);
     bottom: 10px !important;
     width: 25px !important;
+  }
+  
+  .toggle-container-light, .toggle-container-dark  {
+    margin-right: 18px;
+  }
+  
+  .toggle-btn {
+    width: 25px;
+    height: 25px;
+    font-size: 18px;
   }
 }
 
@@ -572,6 +586,11 @@ body {
 @media screen and (max-width: 768px) {
   .res-mt {
     margin-top: 2rem;
+  }
+
+  .project-blocks div {
+    padding-right: 0.5rem !important;
+    padding-left: .5rem !important;
   }
 }
 
