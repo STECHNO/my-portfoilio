@@ -89,7 +89,7 @@ function App() {
         <Container>
           <Row className='row-m'>
             <Col lg={6} md={6} sm={12}>
-              <div data-aos="zoom-out-left" className="portfolio-intro">
+              <div className="portfolio-intro">
                 <h3>Hi there, I'm Saleheen. 👋</h3>
                 {/* <h1>Full Stack MERN / Flutter <br /> Developer</h1> */}
                 <h1>React JavaScript Developer</h1>
@@ -102,7 +102,7 @@ function App() {
               </div>
             </Col>
             <Col lg={6} md={6} sm={12}>
-              <div data-aos="zoom-out-right" className="portfolio-image">
+              <div className="portfolio-image">
                 <img src={`${darkMode ? irblack : irwhite}`} alt="Portfolio" />
               </div>
             </Col>
