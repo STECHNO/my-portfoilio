@@ -99,8 +99,7 @@ function App() {
               <Container>
                 <Row className='row-m'>
                   <Col lg={6} md={6} sm={12}>
-                    <div className="portfolio-intro" data-aos="fade-up"
-                      data-aos-anchor-placement="center-center">
+                    <div className="portfolio-intro">
                       <h3>Hi there, I'm Saleheen. 👋</h3>
                       {/* <h1>Full Stack MERN / Flutter <br /> Developer</h1> */}
                       <h1>React JavaScript Developer</h1>
@@ -113,8 +112,7 @@ function App() {
                     </div>
                   </Col>
                   <Col lg={6} md={6} sm={12}>
-                    <div className="portfolio-image" data-aos="fade-up"
-                      data-aos-anchor-placement="center-center">
+                    <div className="portfolio-image">
                       <img src={`${darkMode ? irblack : irwhite}`} alt="Portfolio" />
                     </div>
                   </Col>
