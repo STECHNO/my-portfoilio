@@ -4,14 +4,27 @@
   font-family: "Nunito Sans", sans-serif !important;
 }
 
-body {
+/* body {
   position: relative;
   top: 5rem;
-}
+} */
 
 html,
 body {
   overflow-x: hidden;
+}
+
+.animation-cont {
+  width: 100vw;
+  height: 100vh;
+  background-color: #000000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-container {
+  margin-top: 5rem;
 }
 
 .dark-mode {
@@ -270,7 +283,7 @@ body {
   height: 100%;
   display: flex;
   flex-direction: column;
-  align-items: left;
+  align-items: flex-start;
   justify-content: center;
 }
 
